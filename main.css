@@ -5,7 +5,7 @@ section{
     padding: 0;
 }
 .header{
-    background: url("/img/header/fon.jpg") no-repeat center center;
+    background: url("img/header/fon.jpg") no-repeat center center;
     min-height: 750px;
     width: auto;
 }
