@@ -1,0 +1,294 @@
+body,
+section{
+    margin: 0;
+    margin-left: -2px;
+    padding: 0;
+}
+.header{
+    background: url("/img/header/fon.jpg") no-repeat center center;
+    min-height: 750px;
+    width: auto;
+}
+.content{
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+
+}
+.top-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    border-bottom: 1px solid #3a3d56;
+}
+.header .top-menu .menu ul li{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 55px 10px 0;
+    text-transform: uppercase;
+}
+.header .top-menu .menu ul li:last-child{
+    padding-right: 0;
+}
+.header .content .text-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+
+}
+.header .content .text-content h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 65px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 40px;
+    line-height: 1em;
+}
+.header .content .text-content h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 0%;
+    line-height: 1.5em;
+}
+.header .content .text-content a{
+    margin-top: 80px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:#fff;
+    background-color: #e84545;
+    padding: 19px 53px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 5px;
+    opacity: 1;
+}
+.header .content .text-content a:hover{
+    opacity: .8;
+}
+.advantage .content .features{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 70px auto;
+    background-color: #fff;
+
+}
+.advantage .content .features .advantage-item{
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    margin: 35px auto;
+}
+.advantage .content .features .advantage-item .text{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 30px 0;
+}
+.advantage .content .features .advantage-item .subtext{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #6c7279;
+    line-height: 1.5em;
+}
+section.works{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 3px;
+}
+section.works .works-item{
+    position: relative;
+    text-align: center;
+    height: 350px;
+
+    
+}
+section.works .works-item .workss{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    background-color: #e84545;
+    opacity: 0.9;
+    display: none;
+}
+section.works .works-item:hover .workss{
+    display: block;
+}
+section.works .works-item .works-cap{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+
+}
+section.works .works-item .works-cap .name{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+section.works .works-item .works-cap .about{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;   
+    color: #fff;
+}
+.team .teams{
+    display: flex;
+    padding: 100px 0;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.team .teams .times-item{
+    width: 270px;
+}
+.team .teams .times-item .name{
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 30px;
+
+}
+.team .teams .times-item .prof{
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 400; 
+    color: #e84545;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+.team .teams .times-item .description{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400; 
+    color: #6c7279;
+    line-height: 1.5em;
+    margin-bottom: 40px;
+}
+.clients .client-item{
+    display: flex;
+    background-color: #53354a;
+}
+.clients .client-item .blockquote{
+    align-self: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    font-weight: 400; 
+    font-style: italic;
+    color: #fff;
+    max-width: 500px;
+    margin-left: 80px;
+    position: relative;
+}
+.clients .client-item .blockquote .figcaption{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 35px; 
+    text-transform: uppercase;  
+}
+.clients .client-item .slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.clients .client-item .slide .slide-item{
+    background-color: #755d6e;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.download .content{
+    text-align: center;
+}
+.download .content h2{
+    margin-top: 90px;
+    margin-bottom: 0;
+    font-size: 28px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400; 
+}
+.download .content p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 700;   
+    margin-bottom: 20px;
+}
+.download .content .btn{
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+.download .content a{
+    padding: 17px 80px;
+    background-color: #e84545;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600; 
+    font-size: 13px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.footer{
+    background-color: #3a3e64;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+.footer .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+
+}
+.footer .content h3{
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 700;   
+    color: #fff;
+}
+.footer .content p{
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400; 
+    color: #fff;
+    opacity: .5;
+    line-height: 1.5em;
+}
+.copyright{
+    background-color: #313454;
+    text-align: center;
+}
+.copyright p{
+    margin: 0;
+    padding: 30px 0;
+    color: #808080;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400; 
+    
+}
+.copyright p span{
+    color: #fff;
+}
