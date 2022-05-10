@@ -5,8 +5,9 @@ section{
     padding: 0;
 }
 .header{
-    background: url("img/header/fon.jpg") no-repeat center center;
-    min-height: 750px;
+    background: url("/img/header/fon.jpg") no-repeat center center;
+    height: 750px;
+    max-height: 750px;
     width: auto;
 }
 .content{
@@ -102,10 +103,10 @@ section{
     line-height: 1.5em;
 }
 section.works{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,1fr);
+    display: flex;
     gap: 3px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 section.works .works-item{
     position: relative;
@@ -188,6 +189,9 @@ section.works .works-item .works-cap .about{
 .clients .client-item{
     display: flex;
     background-color: #53354a;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
 }
 .clients .client-item .blockquote{
     align-self: center;
@@ -199,6 +203,7 @@ section.works .works-item .works-cap .about{
     max-width: 500px;
     margin-left: 80px;
     position: relative;
+    padding: 40px 0;
 }
 .clients .client-item .blockquote .figcaption{
     font-family: 'Raleway', sans-serif;
@@ -207,6 +212,10 @@ section.works .works-item .works-cap .about{
     font-style: normal;
     margin-top: 35px; 
     text-transform: uppercase;  
+}
+.clients .client-item img{
+    max-width: 100%;
+    height: auto;
 }
 .clients .client-item .slide{
     position: absolute;
